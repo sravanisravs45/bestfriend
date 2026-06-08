@@ -2,6 +2,9 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  */
+import cafeteria from "./assets/images/cafeteria.jpg";
+import station from "./assets/images/station.jpg";
+import mall from "./assets/images/mall.jpg";
 
 export interface PolaroidMemory {
   id: string;
@@ -31,7 +34,7 @@ export interface FriendshipPromise {
 export const POLAROID_MEMORIES: PolaroidMemory[] = [
   {
     id: "mem1",
-    src: "/src/assets/images/cafeteria.jpg",
+    src: cafeteria,
     title: "Cozy Office Cafeteria Moments",
     caption: "At last, we met in the cafeteria and took some photos together. Those pictures became both our first and last photos within the Cognizant office premises. The CTS campus cafeteria will always remain a special place for me, as it was where we met, shared conversations, and created beautiful memories that I will always cherish.🫂",
     angle: 3,
@@ -39,7 +42,7 @@ export const POLAROID_MEMORIES: PolaroidMemory[] = [
   },
   {
     id: "mem2",
-    src: "/src/assets/images/station.jpg",
+    src: station,
     title: "Station Story & Farewell",
     caption: "On my last day, we met at Tambaram Railway Station. Even though you had a fever, you still came to send me off. I will never forget that gesture and the effort you made just to be there,Thank you for coming that day. This photo is the last picture we took together, and it will always remain one of my most precious memories.❤️",
     angle: 3,
@@ -47,7 +50,7 @@ export const POLAROID_MEMORIES: PolaroidMemory[] = [
   },
   {
     id: "mem3",
-    src: "/src/assets/images/mall.jpg",
+    src: mall,
     title: "Mall Wandering & Fun",
     caption: "A simple day at the mall turned into a special memory. We walked around, talked about random things, clicked photos, and enjoyed every moment together. Looking at this picture brings back all the laughter, fun conversations, and the happiness of spending time together.😊",
     angle: 3,
