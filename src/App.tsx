@@ -481,7 +481,7 @@ and every moment we share.`,
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.8 }}
-            className="min-h-screen pb-24 relative z-10"
+            className="pb-4 relative z-10"
           >
             
             {/* Sparkling Custom Falling Sparkle Elements */}
@@ -794,71 +794,67 @@ and every moment we share.`,
 
                 {/* ================= PAGE 3/3: THANK YOU FOR THE MEMORIES & SWEET TEXTDisplay ================= */}
                 {subPage === "promise" && (
-                  <motion.div
-                    key="page-promise"
-                    initial={{ opacity: 0, x: 20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    exit={{ opacity: 0, x: -20 }}
-                    transition={{ duration: 0.35, ease: "easeInOut" }}
-                  >
-                    <section id="the-memories-ending">
-                      <div className="bg-gradient-to-r from-rose-500/10 via-pink-400/5 to-purple-500/10 rounded-3xl p-8 md:p-12 text-center border border-rose-100/50 shadow-xl relative overflow-hidden">
-                        <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-yellow-300 via-rose-400 to-purple-400" />
-                        
-                        {/* Hearts animations */}
-                        <div className="absolute top-[15%] left-[10%] opacity-40 text-rose-500 animate-bounce duration-1000 text-3xl">♥</div>
-                        <div className="absolute bottom-[15%] right-[10%] opacity-40 text-rose-500 animate-bounce duration-700 text-3xl">♥</div>
+  <motion.div
+    key="page-promise"
+    initial={{ opacity: 0, x: 20 }}
+    animate={{ opacity: 1, x: 0 }}
+    exit={{ opacity: 0, x: -20 }}
+    transition={{ duration: 0.35, ease: "easeInOut" }}
+  >
+    <section id="the-memories-ending">
+      <div className="bg-gradient-to-r from-rose-500/10 via-pink-400/5 to-purple-500/10 rounded-3xl p-6 md:p-8 text-center border border-rose-100/50 shadow-xl relative overflow-hidden">
+        <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-yellow-300 via-rose-400 to-purple-400" />
+        
+        <div className="absolute top-[15%] left-[10%] opacity-40 text-rose-500 animate-bounce duration-1000 text-3xl">♥</div>
+        <div className="absolute bottom-[15%] right-[10%] opacity-40 text-rose-500 animate-bounce duration-700 text-3xl">♥</div>
 
-                        <span className="text-xl md:text-2xl font-serif text-rose-600 font-extrabold block mb-3 uppercase tracking-wider">
-                          Our Promise Forever ♥
-                        </span>
+        <span className="text-xl md:text-2xl font-serif text-rose-600 font-extrabold block mb-3 uppercase tracking-wider">
+          Our Promise Forever ♥
+        </span>
 
-                        {/* Requirements Match: "thank you for the memoriess" (big headings) */}
-                        <h2 className="text-4xl md:text-5.5xl font-serif font-black text-rose-600 tracking-tight leading-none mb-6">
-                          Thank you for the memoriess
-                        </h2>
+        <h2 className="text-4xl md:text-5.5xl font-serif font-black text-rose-600 tracking-tight leading-none mb-6">
+          Thank you for the memoriess
+        </h2>
 
-                        {/* Requirements Match: "has some text after thank you for the memories" */}
-                        <div className="max-w-2xl mx-auto space-y-4">
-                          <p className="text-base md:text-lg text-neutral-700 font-sans leading-relaxed tracking-wide font-medium">
-                            {MEMORY_CLOSING_TEXT}
-                          </p>
-                        </div>
-                      </div>
+        <div className="max-w-2xl mx-auto space-y-4">
+          <p className="text-base md:text-lg text-neutral-700 font-sans leading-relaxed tracking-wide font-medium">
+            {MEMORY_CLOSING_TEXT}
+          </p>
+        </div>
+      </div>
 
-                      {/* Repeat back navigation action */}
-                      <div className="mt-12 flex flex-wrap justify-center gap-4">
-                        <button
-                          onClick={() => {
-                            playCustomTone(392, "sine", 0.15, 0.05);
-                            setSubPage("letter");
-                            window.scrollTo({ top: 0, behavior: 'smooth' });
-                          }}
-                          className="px-6 py-3 rounded-full bg-white text-rose-600 border border-rose-100 font-sans font-bold text-xs tracking-wider uppercase shadow-xs hover:bg-rose-50/50 hover:shadow-sm transform active:scale-95 transition-all cursor-pointer"
-                        >
-                          <span>💌 Re-read Our Letter</span>
-                        </button>
-                        <button
-                          onClick={() => {
-                            playCustomTone(440, "sine", 0.15, 0.05);
-                            setSubPage("scrapbook");
-                            window.scrollTo({ top: 0, behavior: 'smooth' });
-                          }}
-                          className="px-6 py-3 rounded-full bg-white text-rose-600 border border-rose-100 font-sans font-bold text-xs tracking-wider uppercase shadow-xs hover:bg-rose-50/50 hover:shadow-sm transform active:scale-95 transition-all cursor-pointer"
-                        >
-                          <span>📸 Re-open Scrapbook</span>
-                        </button>
-                      </div>
-                    </section>
-                  </motion.div>
-                )}
+      <div className="mt-6 flex flex-wrap justify-center gap-4">
+        <button
+          onClick={() => {
+            playCustomTone(392, "sine", 0.15, 0.05);
+            setSubPage("letter");
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }}
+          className="px-6 py-3 rounded-full bg-white text-rose-600 border border-rose-100 font-sans font-bold text-xs tracking-wider uppercase shadow-xs hover:bg-rose-50/50 hover:shadow-sm transform active:scale-95 transition-all cursor-pointer"
+        >
+          <span>💌 Re-read Our Letter</span>
+        </button>
+        <button
+          onClick={() => {
+            playCustomTone(440, "sine", 0.15, 0.05);
+            setSubPage("scrapbook");
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }}
+          className="px-6 py-3 rounded-full bg-white text-rose-600 border border-rose-100 font-sans font-bold text-xs tracking-wider uppercase shadow-xs hover:bg-rose-50/50 hover:shadow-sm transform active:scale-95 transition-all cursor-pointer"
+        >
+          <span>📸 Re-open Scrapbook</span>
+        </button>
+      </div>
+    </section>
+  </motion.div>
+)}
 
               </AnimatePresence>
             </main>
 
             {/* Custom footer element */}
             {subPage === "promise" && (
-              <footer className="mt-20 border-t border-rose-100 pt-8 pb-12 text-center text-xs text-neutral-400">
+              <footer className="mt-4 border-t border-rose-100 pt-3 pb-4 text-center text-xs text-neutral-400">
                 
                 <p className="mt-1">
                   Happy Best Friend Day, Myann! Thank you for walking this glowing path together with me.
@@ -868,7 +864,7 @@ and every moment we share.`,
                     playBell();
                     setStage("envelope");
                   }}
-                  className="mt-6 px-4 py-2 rounded-full border border-rose-100/60 bg-white/60 hover:bg-white text-rose-500 hover:text-rose-600 hover:shadow-xs text-[11px] font-sans font-bold flex items-center gap-1.5 mx-auto active:scale-95 transition-all"
+                  className="mt-3 px-4 py-2 rounded-full border border-rose-100/60 bg-white/60 hover:bg-white text-rose-500 hover:text-rose-600 hover:shadow-xs text-[11px] font-sans font-bold flex items-center gap-1.5 mx-auto active:scale-95 transition-all"
                 >
                   <span>If you want to see again Go back to first</span>
                 </button>
