@@ -1,0 +1,6 @@
+{
+  "name": "Best Friend Day for Myann",
+  "description": "A magical, interactive memory capsule and gift website for my best friend Myann on Best Friend Day.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
